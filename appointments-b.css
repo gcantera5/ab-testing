@@ -2,18 +2,18 @@
     @ STUDENTS: EDIT THIS FILE TO MODIFY THE CSS RULES OF B.HTML
  */
 
-@font-face {
-    font-family: 'PPNeueMontreal';
+ @font-face {
+    font-family: "PPNeueMontreal";
     src: url(fonts/PPNeueMontreal-Medium.otf);
 }
 
 @font-face {
-    font-family: 'PPNeueMontrealBook';
+    font-family: "PPNeueMontrealBook";
     src: url(fonts/PPNeueMontreal-Book.otf);
 }
 
 @font-face {
-    font-family: 'PPNeueMontrealThin';
+    font-family: "PPNeueMontrealThin";
     src: url(fonts/PPNeueMontreal-Thin.otf);
 }
 
@@ -30,7 +30,7 @@
 
 .appointments-container-name {
     font-size: 20px;
-    font-family: 'PPNeueMontrealBook';
+    font-family: "PPNeueMontrealBook";
     color: #868686;
     margin-top: 0;
     margin-bottom: 12px;
@@ -39,7 +39,7 @@
 .divider {
     height: 1px;
     width: 100%;
-    background-color: #DADADA;
+    background-color: #dadada;
     margin-top: 0;
     margin-bottom: 17px;
 }
@@ -49,6 +49,9 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 15px;
+
+    border-bottom: 1px solid #868686;
+    padding-bottom: 1rem;
 }
 
 .appointment-date {
@@ -56,13 +59,13 @@
     flex-direction: column;
     margin-right: 25px;
 
-.date-text {
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: right;
-    font-size: 24px;
-    font-family: 'PPNeueMontrealThin';
-}
+    .date-text {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: right;
+        font-size: 24px;
+        font-family: "PPNeueMontrealThin";
+    }
 }
 
 .appointment-info {
@@ -71,21 +74,22 @@
     justify-content: center;
     min-width: 280px;
 
-.appointment-title, .appointment-text {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: #868686;
-}
+    .appointment-title,
+    .appointment-text {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #868686;
+    }
 
-.appointment-title {
-    font-size: 24px;
-    font-family: 'PPNeueMontreal';
-}
+    .appointment-title {
+        font-size: 24px;
+        font-family: "PPNeueMontreal";
+    }
 
-.appointment-text {
-    font-size: 20px;
-    font-family: 'PPNeueMontrealBook';
-}
+    .appointment-text {
+        font-size: 20px;
+        font-family: "PPNeueMontrealBook";
+    }
 }
 
 .appointment-buttons {
@@ -94,14 +98,17 @@
     gap: 10px;
     padding-left: 45%;
 
-.defunct-button, .working-button {
-    background-color: #D4E8FF;
-    border: none;
-    border-radius: 9px;
-    width: 180px;
-    height: 45px;
-    color: white;
-}
+    .defunct-button,
+    .working-button {
+        background-color: #C0C0C0;
+        box-shadow: inset lightgray 0px 0px 5px -5px;
+
+        border: none;
+        border-radius: 9px;
+        width: 180px;
+        height: 45px;
+        color: white;
+    }
 }
 
 .success-dialog {
@@ -109,26 +116,31 @@
     border-radius: 6px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 
-.dialog-text {
-    font-family: 'PPNeueMontrealBook';
-    font-size: 20px;
-    color: #868686;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
+    .dialog-text {
+        font-family: "PPNeueMontrealBook";
+        font-size: 20px;
+        color: #868686;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
 
-.dialog-button {
-    margin-top: 10px;
-    width: 150px;
-    border: none;
-    background-color: #D4E8FF;
-    border-radius: 9px;
-    padding: 14px 21px 14px 21px;
-    color: white;
-}
+    .dialog-button {
+        margin-top: 10px;
+        width: 150px;
+        border: none;
+        background-color: #d4e8ff;
+        border-radius: 9px;
+        padding: 14px 21px 14px 21px;
+        color: white;
+    }
 }
 
 .success-dialog::backdrop {
     background-color: black;
     opacity: 20%;
+}
+
+#working-button {
+    background-color: #ffb3b3;
+    box-shadow: none;
 }
